@@ -71,3 +71,7 @@ nav ul li a:hover.active {
 .content {
     margin: 1rem;
 }
+
+.hide {
+    display: none;
+}

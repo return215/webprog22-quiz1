@@ -18,13 +18,26 @@
             <li><a href="/profile">About</a></li>
         </ul>
     </nav>
-    <h1>Origin</h1>
-    <p>
-    This page is made to fulfill my legal duties as a citizen
-    </p>
-    <p>
-        text
-    </p>
+    <div class="content">
+        <h1>Origin</h1>
+        <img id="map" 
+            src="city.png" alt="Map of Banjarmasin, copyright OpenStreetMap"
+            onclick="showBorder()" role="button" tabindex="0">
+        <img id="map-border" class="hide" 
+            src="city-border.png" alt="Map of Banjarmasin with borders, copyright OpenStreetMap"
+            onclick="showBorder()" role="button" tabindex="0">
+        <p>Click on the image to show country border. Image provided by OpenStreetMap.</p>
+        <p> Banjarmasin is a city in South Kalimantan, Indonesia. It was the capital of the province until
+            15 February 2022, where the capital is now assigned to the city of Banjarbaru. The city is
+            located on a delta island near the junction of the Barito and Martapura Rivers. Historically
+            the center of the Banjarese culture, it is the biggest city in South Kalimantan and one of
+            main cities in Kalimantan. It was established in 24 September 1526.
+        </p>
+        <p> This city is also known as the City of Thousand Rivers (<em>Kota Seribu Sungai</em>) because
+            there is a massive network of rivers, big and small. The city's tagline promotes a popular
+            tourism feature known as the Floating Market (<em>Pasar Terapung</em>).
+        </p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
