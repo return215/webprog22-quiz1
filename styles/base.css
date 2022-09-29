@@ -1,5 +1,9 @@
 /* global */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
@@ -74,4 +78,71 @@ nav ul li a:hover.active {
 
 .hide {
     display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* slideshow */
+
+.slideshow {
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    margin: 0 auto;
+}
+
+.slide img {
+    margin: 0 auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 1rem;
+    margin-top: -3rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 24px;
+    border: 0;
+    border-radius: 0 8px 8px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 8px 0;
+    font-size: 0.75em;
+    padding: 0.5rem 0.75rem;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    background-color: #222;
+    padding: 0.1rem 1rem;
+    color: white;
+}
+
+img, svg {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
 }
